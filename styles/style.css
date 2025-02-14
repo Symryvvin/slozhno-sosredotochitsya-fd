@@ -178,3 +178,29 @@
 .content__text-link:focus-within {
   outline: 1px solid var(--text-color);
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery__image {
+  inline-size: 100%;
+  max-inline-size: 100%;
+  block-size: 100%;
+  max-block-size: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 668px;
+  justify-content: center;
+}
+
+.footer__title {
+  align-self: center;
+}
