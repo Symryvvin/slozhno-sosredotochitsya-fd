@@ -162,7 +162,7 @@
   font-weight: var(--font-bold);
 }
 
-.content__text-block { 
+.content__text-block {
   color: var(--text-color);
   font-weight: var(--font-regular);
 }
@@ -322,13 +322,27 @@
 
 @media (width >= 1024px) {
 
+  .header {
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    justify-items: end;
+    align-content: top;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
   .header__theme-menu-list {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 70px;
+    flex-direction: row;
+    width: 100%;
     color: var(--theme-button-text-color);
+  }
+
+  .header__theme-menu-item {
+    width: 70px;
   }
 
   .section:nth-child(2) {
