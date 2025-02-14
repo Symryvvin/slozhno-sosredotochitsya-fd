@@ -1,4 +1,5 @@
 :root {
+  --main-font: 'IBM Plex mono';
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
@@ -10,7 +11,7 @@
 
   --title-decor-bg-color: var(--accent-color);
   --title-decor-text-color: #000028;
-  --section-title-color: var(----accent-color);
-  --link-shadow-color: var(----accent-color);
+  --section-title-color: var(--accent-color);
+  --link-effect-color: var(--accent-color);
 
 }
