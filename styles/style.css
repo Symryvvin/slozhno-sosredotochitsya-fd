@@ -1,10 +1,10 @@
 .page {
   font-family: var(--main-font), sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   font-size: 18px;
   line-height: 1.3em;
   background-color: var(--bg-color);
-  background-image: var(--header-cover-image);
+  background-image: var(--cover-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -16,7 +16,6 @@
   justify-items: end;
   align-items: center;
   position: relative;
-  color: var(--header-color);
   padding: 10px;
   height: 100vh;
   min-height: 668px;
@@ -26,8 +25,8 @@
   position: absolute;
   content: '';
   display: block;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorated-zone-color);
+  border-right: 1px solid var(--decorated-zone-color);
   width: 25px;
   height: 25px;
   right: 10px;
@@ -38,8 +37,8 @@
   position: absolute;
   content: '';
   display: block;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decorated-zone-color);
+  border-left: 1px solid var(--decorated-zone-color);
   width: 25px;
   height: 25px;
   left: 10px;
@@ -114,14 +113,14 @@
 
 .header__title {
   justify-self: start;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--header-title-effect-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-title-text-color);
   line-height: 0.83em;
 }
 
 .title-paragpaph {
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .title-decor {
@@ -143,7 +142,7 @@
 
 .section__title {
   color: var(--section-title-color);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-size: 18px;
 }
 
@@ -155,28 +154,29 @@
 
 .content__title {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .content__text-block { 
   color: var(--text-color);
+  font-weight: var(--font-regular);
 }
 
 .content__sub-title {
-  font-weight: 400;
+  font-weight: var(--font-regular);
 }
 
 .content__text-link {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--link-effect-color);
   text-decoration: none;
 }
 
 .content__text-link:hover {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--link-text-color);
 }
 
 .content__text-link:focus-within {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid var(--link-text-color);
 }
 
 .gallery {
