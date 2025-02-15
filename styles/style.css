@@ -155,7 +155,7 @@
 .content__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 20px; 
 }
 
 .content__text-block {
@@ -200,6 +200,10 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+}
+
+.gallery__title {
+  margin-block-end: 10px;
 }
 
 .gallery__image {
@@ -266,10 +270,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .content__wrapper {
-    gap: 20px; 
-  }
-
   .why .section__title,
   .what .section__title,
   .how .section__title {
@@ -288,14 +288,18 @@
     grid-column: span 2;
   }
 
+  .gallery__content {
+    grid-column: span 3;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    grid-column: span 3;
   }
 
   .gallery__title {
     grid-column: span 3;
+    margin-block-end: 20px;
   }
 
   .gallery__image:nth-child(1) {
