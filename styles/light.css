@@ -24,6 +24,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
     --bg-color: #FFF1F7;
     --text-color: #353430;
@@ -43,6 +44,10 @@
     --section-title-color: var(--text-color);
     --link-text-color: var(--text-color);
     --link-effect-color: var(--accent-color);
+  }
+
+  .theme-auto .rec-icon {
+    display: none;
   }
 
 }

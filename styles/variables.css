@@ -1,5 +1,5 @@
 :root {
-  --main-font: 'IBM Plex mono';
+  --main-font: 'IBM Plex mono', sans-serif;
   --font-bold: 700;
   --font-regular: 400;
 
