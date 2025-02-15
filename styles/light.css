@@ -22,3 +22,27 @@
 .theme-light .page .rec-icon {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF1F7;
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --cover-image: url(../images/cover-image-light.png);
+  
+    --theme-button-text-color: var(--text-color);
+    --theme-button-hover-border-color: #32312D66;
+  
+    --decorated-zone-color: var(--text-color);
+    --header-title-text-color: #FFC2E6;
+    --header-title-effect-color: var(--accent-color);
+  
+    --title-decor-bg-color: var(--accent-color);
+    --title-decor-text-color: var(--text-color);
+  
+    --section-title-color: var(--text-color);
+    --link-text-color: var(--text-color);
+    --link-effect-color: var(--accent-color);
+  }
+
+}
