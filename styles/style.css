@@ -267,27 +267,12 @@
   }
 
   .section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .why .section__title,
-  .what .section__title,
-  .how .section__title {
-    min-width: 236px;
-  }
-
-  .why .content__wrapper {
-    grid-column: span 2;
+    grid-template-columns: 1fr 2fr;
   }
 
   .what .content__wrapper {
     grid-column: span 3;
   }
-
-  .how .content__wrapper {
-    grid-column: span 2;
-  }
-
   .gallery__content {
     grid-column: span 3;
   }
@@ -336,10 +321,22 @@
     min-width: 70px;
   }
 
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why .content__wrapper {
+    grid-column: span 2;
+  }
+
   .what .content__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
+  }
+  
+  .how .content__wrapper {
+    grid-column: span 2;
   }
   
 }
